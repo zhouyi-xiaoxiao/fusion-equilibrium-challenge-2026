@@ -1,0 +1,15 @@
+# Learned modules of the MAST pipeline: <bytes> <sha256> <path under the work directory>.
+# The inverse profiles (p7a, p7c, p7a_tsw05, p7li) have no learned weight file (the l_i model of p7li is the json in ch2/constants/p7li).
+# The syn_* profiles train their network during the run on synthetic equilibria driven by the input columns of the shots being
+# predicted (RUN_MODELS in ch2/pipelines/syn_net.inc; sha256 in the run's record.json). For a Final submission made with a syn_*
+# profile, the network of that run is published with the weights and listed here (tools/publish_model.py; RUNBOOK_FINAL.md step B.7);
+# SYN_MODEL_FILE=<that file> then reproduces the predictions without retraining.
+# Profiles int_b50c1nx / int_b50gld: the DIII-D-trained map corrector (LightGBM, 9 outputs; ch2/train_corr_b50.sh; DIII-D TRAIN labels only).
+4464290 150620dd47c68d6d85a8410e1821f2b1d31adb2b7c3ad57e21b992ee62446bf8 ch2_models/corr_b50/mB50_tr.pkl
+# Profile dec_e4s_c1nx: support-gate source table of the start-up decoder (ch2/pipelines/dec_e4s.inc) = the 11 dimensionless net-minus-inverse
+# feature columns of the DIII-D TRAIN-pool estimator tables (4,104 shots x 12 frames x clean / stressed; ch2/train_dec_e4s.sh stage support).
+17805948 dd08f38411327f2d1fbed13e4dfcb3e8f0152cc353ed4663b660a9720f805d5d ch2_models/dec_e4s/support_source_d3d.parquet
+# Network of the Final run of 19 October 2026 (profile dec_e4s_c1nx; MAST file of Final submissions 1002494 and 1006850, and the
+# input of the post stage of 1003753): the published copy written by tools/publish_model.py (RUNBOOK_FINAL.md step B.7). The file
+# as trained by the run has sha256 fbcb1ba660a1774b9191a831e30a7622623d626739ae6c0b9ebe57594c21e169 (record.json, run_models).
+35874670 a4f54b23b23336dddc6e7123772b3f6bcf2ad3f3bd078775048c688396299b34 stage11_ch2/final/model_mCxa32.pt

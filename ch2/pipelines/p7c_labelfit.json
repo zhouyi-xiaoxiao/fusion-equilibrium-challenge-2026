@@ -1,0 +1,26 @@
+{
+ "family": "cub",
+ "params": [
+  "lcp",
+  "b1",
+  "b2",
+  "be",
+  "dr"
+ ],
+ "b0": [
+  0.0,
+  0.0
+ ],
+ "sig_b": [
+  1.5,
+  1.5
+ ],
+ "be0": 0.0,
+ "sig_be": 0.5,
+ "b_lo": -3.0,
+ "b_hi": 3.0,
+ "be_lo": -0.5,
+ "be_hi": 1.5,
+ "_what": "label fit of the cubic family (review round 2): wide priors around FF' ~ (1-u)",
+ "pe_s_fix": 0.5
+}

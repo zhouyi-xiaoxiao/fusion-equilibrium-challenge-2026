@@ -1,0 +1,29 @@
+# TEMPLATE (not a profile: copy to ch2/pipelines/<name>.sh and fill in) — a MAST pipeline with a LEARNED module, e.g. an amortised
+# network trained on our own synthetic free-boundary equilibria, or a map-space corrector trained on DIII-D labels, applied on
+# top of a physics-inverse run. Rules that apply (PROVENANCE.md section 2): training data = DIII-D labels and / or our own
+# synthetic equilibria only; MAST inputs only at inference; no MAST label, demo shot, envelope or MAST equilibrium statistic.
+#
+# 1. Base pipeline: source the profile of the inverse the module reads (its run directory is the module's input).
+. "$FEC_REPO/ch2/pipelines/p7a.sh"
+CONST_PIPE=p7a                       # constants of the base pipeline, unless the module re-derives q95 / beta_N (then: own constants dir)
+PIPE_DESC="<inverse> + <module>"
+REF_MD5=""                           # md5 of the Development-phase file of exactly this pipeline, once it exists
+# 2. Weight files the module loads; listed with sha256 in weights/MANIFEST_CH2.sha256 (paths under the work directory) and placed
+#    by tools/fetch_weights.sh; predict_mast.sh refuses to start when one is missing.
+MODELS=("$SCR/ch2_models/<module>/model_s0.pt" "$SCR/ch2_models/<module>/model_s1.pt")
+# 3. Post stages in order: each writes <output npz> from <input npz> (same keys, order, shapes, float32) and may read the run
+#    directory (parts, frame table, cfg) and the MAST shot directory (input columns only, through rule3_guard).
+POST=(<module> tsmooth)
+post_<module>() {  # <run dir> <input npz> <output npz> <mast shot dir>
+  local O=$1 IN=$2 OUTF=$3 MD=$4
+  ( cd "$WS/stage11_run/<module dir>" && $PYS <module>_predict.py --run "$O" --tag "$TAG" --data-dir "$MD" --src "$IN" \
+      --models "${MODELS[@]}" --out "$OUTF" ) 2>&1 | tail -3
+  [ -s "$OUTF" ]
+}
+# post_tsmooth: copy from p7a_tsw05.sh if the temporal smoother is the last stage (bandwidth re-checked for this module).
+#
+# 4. Training entrypoint (ships with the profile): ch2/train_<module>.sh
+#      stage gen    synthetic equilibria / DIII-D tables (CPU, seeded; declared as data generation, sha256 of the outputs or the
+#                   generated data itself listed like weights/GENERATED.sha256)
+#      stage train  GPU training with fixed seeds and epochs -> the MODELS files; compare with weights/MANIFEST_CH2.sha256
+#    and add its GPU-hours to PROVENANCE.md section 4 (the 24 A100-GPU-hour ceiling counts DIII-D and MAST training together).

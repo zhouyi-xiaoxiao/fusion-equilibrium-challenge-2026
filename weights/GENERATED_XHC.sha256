@@ -1,0 +1,5 @@
+# Generated data read by the training stage FT of the DIII-D profile xhc (ch1/train_xhc_ft.sh) in addition to weights/GENERATED.sha256:
+# <bytes> <sha256> <path under the work directory>. The row-order file lists (labelled parquet file names, train / holdout split) of
+# the canonical v2.2 cache, written with it by stage11_run/e_cx/cx_canon.py; the base training does not read them.
+192948 c011e3104199032f48500567dbaae5e30c8954438a88166b8542244764e7a833 stage11_ch1/e_cx/h150/feat/train/files.txt
+4200 afec515dca076751af8183e1e4f154ced2f85463e9c86a156cd83588a62aa66c stage11_ch1/e_cx/h150/feat/holdout/files.txt

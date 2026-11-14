@@ -1,0 +1,10 @@
+# Scorer overlay (both architectures): scikit-image at the version the organisers' scorer pins (scikit-image==0.25.2; the scorer uses
+# only skimage.measure.find_contours). Installed with --no-deps into src/.vendor_scorer by env/build_env.sh and put in front of the
+# ML environment ONLY for the contour extraction of the MAST map corrector (ch2/pipelines/corr_b50.inc, ch2/train_corr_b50.sh) - the
+# development runs of that corrector used exactly this version on the path in front of the ML environment. Hashes as in
+# requirements-gs.*.lock (one wheel per architecture).
+lazy-loader==0.6 \
+    --hash=sha256:77253be3391b06124a0e16105bd663b6c54470af1a9ca8e1cf026f38d58ed056
+scikit-image==0.25.2 \
+    --hash=sha256:24cc986e1f4187a12aa319f777b36008764e856e5013666a4a83f8df083c2641 \
+    --hash=sha256:b2cfc96b27afe9a05bc92f8c6235321d3a66499995675b27415e0d0c76625173

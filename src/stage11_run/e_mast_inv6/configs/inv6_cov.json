@@ -1,0 +1,34 @@
+{
+ "basis": "fe",
+ "lcp0": 1.0018,
+ "sig_lcp": 0.35,
+ "b0": [
+  -2.1,
+  0.27
+ ],
+ "sig_b": [
+  1.5,
+  1.0
+ ],
+ "b_lo": -4.0,
+ "b_hi": 4.0,
+ "params": [
+  "dr",
+  "lcp",
+  "b1",
+  "b2",
+  "gs"
+ ],
+ "levels": [
+  0.2,
+  0.35,
+  0.5,
+  0.65,
+  0.8
+ ],
+ "use_inner_eq": true,
+ "shape_mode": "coil",
+ "tau_t": 0.0,
+ "_what": "INV6 coverage-aware c_p prior: P5 + c_p prior mean from MAST-like (pseudo-horizontal) p_e label fit on core-covered DIII-D train frames",
+ "_prior_source": "c_p: lf6_pseudo core-covered (rho_min<0.15) median 2.723 (n=879); sigma 0.35 (review); b priors kept from lf_fe (INV_P5)"
+}

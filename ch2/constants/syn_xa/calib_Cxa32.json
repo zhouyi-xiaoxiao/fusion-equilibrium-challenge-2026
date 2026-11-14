@@ -1,0 +1,11 @@
+{
+ "C_q95": 1.029516594318144,
+ "C_betaN": 1.2272909799162133,
+ "source": "real/d3d_pcal (DIII-D TRAIN labels; network models/model_Cxa32.pt) (output of: ch2/train_syn_d3d.sh <diii_d_train> <name>)",
+ "n_q": 2367,
+ "n_b": 2333,
+ "r2_q95_raw": 0.7919959854559414,
+ "r2_q95_cal": 0.7757658170402575,
+ "r2_betaN_raw": 0.771291937301673,
+ "r2_betaN_cal": 0.8990115391045066
+}

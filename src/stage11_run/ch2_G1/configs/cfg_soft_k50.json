@@ -1,0 +1,21 @@
+{
+ "edge_mode": "soft",
+ "knobs": [
+  "VBZ"
+ ],
+ "sigma_s": 0.03,
+ "huber": 1.5,
+ "sigma_b": 0.03,
+ "edge_bias_m": {
+  "d3d": 0.011,
+  "mast": 0.0
+ },
+ "k_paxis": 2.0,
+ "alpha_m": 1.38,
+ "alpha_n": 1.08,
+ "z_eta": 0.067,
+ "gap_sigma": 0.0,
+ "use_inner": false,
+ "nsub": 1,
+ "sol_scale_mast": 0.5
+}

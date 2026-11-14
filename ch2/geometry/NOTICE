@@ -1,0 +1,19 @@
+Geometry files in this directory
+
+mast_limiter.json
+    MAST first-wall (limiter) polygon, 37 points: the EFIT machine-description limiter "lim_mast.010_M4"
+    (source attribute: https://git.ccfe.ac.uk/MAST-U/mast-geometry/sources/lim_mast.010_M4, shot range 0..40000).
+    Read from the machine-description group `wall/limiter_{r,z}` of the public FAIR-MAST level-2 store
+    (https://mastapp.site, object store https://s3.echo.stfc.ac.uk/mast/level2/shots/<shot>.zarr) for shots 22000, 29500 and 15000
+    by src/stage11_run/ch2_geometry/fetch_geometry.py, which opens geometry arrays only (allow-list in the script).
+    Data (c) UKAEA, FAIR-MAST, licence CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). This file keeps that licence.
+
+mast_limiter_mask.npz, d3d_limiter_mask.npz
+    65 x 65 grid masks (inside the wall polygon, its one-pixel ring, the polygon resampled at 1 cm) built by
+    src/stage11_run/ch2_geometry/build_limiter_masks.py from the EFIT grids given in the challenge inputs
+    (efit_grid_R / efit_grid_Z) and from: MAST = the polygon above; DIII-D = the wall of FreeGS 0.8.2 `machine.DIIID()`
+    (LGPL-3.0; https://github.com/freegs-plasma/freegs).
+limiter_masks_report.json
+    Summary written by build_limiter_masks.py (grid check on all files, pixel counts, sources).
+
+The scorer's envelope masks (fusion_scoring/masks/*.npz of the starter kit) are not used by any model in this repository.

@@ -1,0 +1,35 @@
+{
+ "basis": "fe",
+ "lcp0": 1.0578,
+ "sig_lcp": 0.35,
+ "b0": [
+  -2.1,
+  0.27
+ ],
+ "sig_b": [
+  1.5,
+  1.0
+ ],
+ "b_lo": -4.0,
+ "b_hi": 4.0,
+ "params": [
+  "dr",
+  "lcp",
+  "b1",
+  "b2",
+  "gs"
+ ],
+ "levels": [
+  0.2,
+  0.35,
+  0.5,
+  0.65,
+  0.8
+ ],
+ "use_inner_eq": true,
+ "shape_mode": "coil",
+ "tau_t": 0.0,
+ "_what": "g_restrict base = INV_P6 final config (inv6_final.json) unchanged; variants are applied with --set / --cfg on top",
+ "_prior_source": "unchanged from INV_P5: D3D label fit lf_fe (87 train shots x 8 frames); coverage-aware fit lf6_pseudo gives c_p 2.72 core-covered (not adopted, see note)",
+ "ms": true
+}

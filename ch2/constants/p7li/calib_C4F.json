@@ -1,0 +1,8 @@
+{
+ "C_q95": 1.0312427516896954,
+ "C_betaN": 1.052089696226176,
+ "n_ok": 2352,
+ "source": "frames_C4F_pcal_d3d.parquet (output of: PIPE=p7li ch2/calibrate_d3d.sh <diii_d_train> <name> pcal)",
+ "z_shrink_ls": 0.6348589554991895,
+ "z_corr": 0.5641080744929536
+}

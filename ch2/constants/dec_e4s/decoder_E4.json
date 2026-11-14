@@ -1,0 +1,32 @@
+{
+ "_what": "E4 = the frozen E1 decoder applied ONLY to start-up-regime frames (regime id 1); every other frame keeps the 0.5 / 0.5 blend map bit for bit. Defined 2026-10-13 12:25 UTC after the DIII-D-analogue runs showed that synthetic weights hurt outside start-up under stress.",
+ "start": "B",
+ "mode": "K",
+ "kp": 1.0,
+ "lam": 1.0,
+ "cp_rel": 0.5,
+ "n_it": 3,
+ "trust": 0.25,
+ "fd": 0.25,
+ "coords": [
+  "sR",
+  "sZ",
+  "dR",
+  "dZ",
+  "shr",
+  "tri",
+  "z2",
+  "sq",
+  "cR",
+  "cZ",
+  "li",
+  "D"
+ ],
+ "jump": 0.3,
+ "axis_jump": 0.25,
+ "osc_neg": 0.02,
+ "osc_tv": 1.3,
+ "only_regimes": [
+  1
+ ]
+}

@@ -1,0 +1,4 @@
+{"basis": "fe", "lcp0": 1.0578, "sig_lcp": 0.35, "b0": [-2.1, 0.27], "sig_b": [1.5, 1.0], "b_lo": -4.0, "b_hi": 4.0,
+ "params": ["dr", "lcp"], "levels": [0.20, 0.35, 0.50, 0.65, 0.80], "use_inner_eq": true, "shape_mode": "coil", "tau_t": 0.0,
+ "_what": "minimal kinetic inverse (pilot stage 3): both edges + Te-isotherm pairs; theta = log c_p + edge offset dr (gamma_radial derived); FF' shape and gamma_shape at their priors",
+ "_prior_source": "D3D label fit lf_fe (87 train shots x 8 frames, medians; IQR/1.35 for sig_b)"}

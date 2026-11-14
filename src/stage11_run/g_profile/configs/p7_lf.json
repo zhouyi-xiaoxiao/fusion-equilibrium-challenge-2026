@@ -1,0 +1,2 @@
+{"sig_lcp": 1.0, "sig_gev": 1e9, "freeze": false, "lm_its": 8, "lcp_lo": -0.7, "lcp_hi": 2.3, "dr_clip": 0.1, "ms": false,
+ "_what": "label-fit overrides (as ch2d_inverse/configs/inv_lf.json): wide priors, no SVD freezing; params / sig_b / family given per run"}

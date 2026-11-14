@@ -1,0 +1,45 @@
+{
+ "what": "variances (np.nanvar, float64) of the 11 scalar targets over the frames of all 7,041 labelled DIII-D shots; used as the weights of the trace ridge in the metric-prior correction step",
+ "names": [
+  "R_axis",
+  "Z_axis",
+  "kappa",
+  "tri_top",
+  "tri_bot",
+  "volume",
+  "li",
+  "Rmin",
+  "Rmax",
+  "Zmin",
+  "Zmax"
+ ],
+ "var": [
+  0.0015860920305301412,
+  0.0016354229290077903,
+  0.009825494240012996,
+  0.060269084543171654,
+  0.048638833237329045,
+  1.6874551552125239,
+  0.06456171797983587,
+  0.001412112772308273,
+  0.0005865096662832044,
+  0.010629762895619722,
+  0.011221468330464373
+ ],
+ "var_hex": [
+  "0x1.9fc8d59929b6ep-10",
+  "0x1.acb75ffb1a299p-10",
+  "0x1.41f63836c52bep-7",
+  "0x1.edb96e6254399p-5",
+  "0x1.8e7306c23cd59p-5",
+  "0x1.affd0fa11ab99p+0",
+  "0x1.0871de34c063ep-4",
+  "0x1.722d48b3892a0p-10",
+  "0x1.337ffeaf0d1dep-11",
+  "0x1.5c50ea001e2dap-7",
+  "0x1.6fb47fbf08696p-7"
+ ],
+ "n_rows": 1559340,
+ "source": "y_aux.npy columns 3..13",
+ "source_sha256": "4a216fd1019b335727fdc21582df922c0b619c183c16b6dd0b5bbf2428f52e92"
+}

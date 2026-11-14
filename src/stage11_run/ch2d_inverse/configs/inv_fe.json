@@ -1,0 +1,2 @@
+{"basis": "fe", "lcp0": 1.0578, "sig_lcp": 0.35, "b0": [-2.1, 0.27], "sig_b": [1.5, 1.0], "b_lo": -4.0, "b_hi": 4.0,
+ "params": ["lcp", "b1", "b2", "dr"], "_prior_source": "D3D label fit lf_fe (87 train shots x 8 frames, medians; IQR/1.35 for sig_b)"}

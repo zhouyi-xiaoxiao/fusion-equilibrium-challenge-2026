@@ -1,0 +1,35 @@
+{
+ "basis": "fe",
+ "lcp0": 1.0578,
+ "sig_lcp": 0.35,
+ "b0": [
+  -2.1,
+  0.27
+ ],
+ "sig_b": [
+  1.5,
+  1.0
+ ],
+ "b_lo": -4.0,
+ "b_hi": 4.0,
+ "params": [
+  "dr",
+  "lcp",
+  "b1",
+  "b2",
+  "gs"
+ ],
+ "levels": [
+  0.2,
+  0.35,
+  0.5,
+  0.65,
+  0.8
+ ],
+ "use_inner_eq": true,
+ "shape_mode": "coil",
+ "tau_t": 0.0,
+ "_what": "INV_P6 = INV_P5 kinetic inverse + multi-start / bidirectional continuation for ambiguous frames (non-X-point-bounded, G1 fallback / failed, elongation spike vs +-2 neighbours): candidates fwd / reverse continuation / cold G1 start at prior / cold G1 start at forward theta; lowest objective, ties (dcost <= 2) -> X-point-bounded, then shape continuity. Density pairs and the coverage-aware c_p prior were implemented and validated but NOT adopted (they fail the DIII-D + held-out-MAST rule).",
+ "_prior_source": "unchanged from INV_P5: D3D label fit lf_fe (87 train shots x 8 frames); coverage-aware fit lf6_pseudo gives c_p 2.72 core-covered (not adopted, see note)",
+ "ms": true
+}

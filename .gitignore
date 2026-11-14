@@ -1,0 +1,7 @@
+src/.venv/
+src/.venv_gs/
+src/starter/
+__pycache__/
+*.pyc
+.DS_Store
+src/.vendor_scorer/

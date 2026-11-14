@@ -1,0 +1,2 @@
+{"params": ["lcp", "b1", "b2", "dr"], "sig_lcp": 1.0, "sig_b": [2.0, 2.0], "sig_gev": 1e9, "freeze": false, "lm_its": 8,
+ "lcp_lo": -0.7, "lcp_hi": 2.3, "dr_clip": 0.1}

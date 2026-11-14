@@ -1,0 +1,8 @@
+{
+ "defaults": {"trainset": "full", "epochs": 40},
+ "runs": [
+  {"name": "FULL_d30aux", "dropout": 0.3, "aux_w": 0.1, "seeds": [0, 1, 2, 3, 4]},
+  {"name": "FULL_towerd30aux", "arch": "tower", "dropout": 0.3, "aux_w": 0.1, "seeds": [0, 1, 2]},
+  {"name": "FULL_K120d30aux", "K": 120, "dropout": 0.3, "aux_w": 0.1, "seeds": [0, 1, 2]}
+ ]
+}

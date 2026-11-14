@@ -1,0 +1,41 @@
+{
+ "mast": {
+  "grid_files_checked": 1206,
+  "grid_files_differing": 0,
+  "grid_R": [
+   0.05999999865889549,
+   0.03031250461935997,
+   2.0
+  ],
+  "grid_Z": [
+   -2.0,
+   0.0625,
+   2.0
+  ],
+  "mask_pixels": 2720,
+  "ring_pixels": 344,
+  "limiter_source": "https://git.ccfe.ac.uk/MAST-U/mast-geometry/sources/lim_mast.010_M4",
+  "limiter_shots_read": [
+   22000,
+   29500,
+   15000
+  ],
+  "mask_R_range": [
+   0.21156249940395355,
+   1.878749966621399
+  ],
+  "mask_Z_range": [
+   -1.8125,
+   1.8125
+  ],
+  "mask_centroid_R": 0.9992417274645584
+ },
+ "d3d": {
+  "grid_files_checked": 200,
+  "grid_files_differing": 0,
+  "mask_pixels": 2209,
+  "ring_pixels": 177,
+  "limiter_source": "freegs 0.8.2 machine.DIIID().wall",
+  "n_wall_points": 117
+ }
+}

@@ -1,0 +1,8 @@
+# Inputs of derivation stages of the MAST pipeline that are not read by the MAST inference (fetch with MANIFESTS=weights/DERIVATION_CH2.sha256).
+# ch2/train_dec_e4s.sh stage ws -> ch2/constants/dec_e4s/wS_L.json: the four synthetic-MAST population tables (published functionals of our
+# own synthetic free-boundary equilibria driven by the input columns of every 3rd MAST public-test shot, and of the inverse / network / blend
+# maps reconstructed from their rendered diagnostics; families A and C, nominal and stressed rendering). No MAST label.
+2149939 6364083326bcba4d9695bd959f753a0d337b7850d3c4ea7c673608b23c40afad ch2_models/dec_e4s/pop/S_sA1.parquet
+2150229 1ea90be10ca766cf8db965dcd9064d006ca45062a7fede344bfa7d1662543061 ch2_models/dec_e4s/pop/S_sA2.parquet
+2395179 5dcba484c85d2fe90d15af7daa10260a9d8228031dff95c979012491a88bd463 ch2_models/dec_e4s/pop/S_sC1.parquet
+2394912 afca5f16e96f1d38e68e5cc26f07d3502013465a2b129866d8f4a9e11d814ccc ch2_models/dec_e4s/pop/S_sC2.parquet

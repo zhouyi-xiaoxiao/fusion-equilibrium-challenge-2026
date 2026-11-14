@@ -1,0 +1,10 @@
+{
+ "basis": "fe", "family": "fe", "src": "native", "edge_w": 0.0,
+ "lcp0": 1.0578, "sig_lcp": 0.35,
+ "b0": [-2.1, 0.27], "sig_b": [1.5, 1.0], "b_lo": -4.0, "b_hi": 4.0,
+ "params": ["dr", "lcp", "b1", "b2"],
+ "levels": [0.2, 0.35, 0.5, 0.65, 0.8],
+ "use_inner_eq": true, "shape_mode": "coil", "tau_t": 0.0, "ms": true,
+ "_what": "P7 base = INV_P6 (e_mast_inv6/configs/inv6_final.json) minus gamma_shape ('gs' removed from params): kinetic inverse on G1 k = 0.5, multi-start; FF' family fe, native source integration. Reference cell F0 of the profile-track factorial.",
+ "_prior_source": "unchanged from INV_P5/P6: D3D label fit lf_fe (87 train shots x 8 frames)"
+}
